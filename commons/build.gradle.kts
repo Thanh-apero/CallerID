@@ -42,6 +42,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
     implementation ("com.google.code.gson:gson:2.12.1")
-    implementation("com.klinkerapps:android-smsmms:5.2.6")
+    implementation(libs.android.smsmms)
 
 }
