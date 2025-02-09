@@ -2,8 +2,8 @@ package com.apero.phone.data.usecase.impl
 
 import android.content.Context
 import com.apero.phone.data.usecase.GetListContactUseCase
-import com.helpers.ContactsHelper
-import com.simplemobiletools.commons.models.contacts.Contact
+import com.apero.commons.dialer.helpers.ContactsHelper
+import com.apero.commons.dialer.models.contacts.Contact
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlin.coroutines.resume
 

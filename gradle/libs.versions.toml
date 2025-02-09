@@ -1,5 +1,5 @@
 [versions]
-agp = "8.7.3"
+agp = "8.5.1"
 gsonVersion = "2.12.1"
 kotlin = "1.9.24"
 coreKtx = "1.13.1"
@@ -12,7 +12,7 @@ activity = "1.10.0"
 constraintlayout = "2.2.0"
 ksp = "1.9.23-1.0.20"
 gradlePlugins-agp = "8.1.2"
-
+hilt = "2.50"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 google-gson = { module = "com.google.code.gson:gson", version.ref = "gsonVersion" }
@@ -23,6 +23,8 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -31,4 +33,4 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 library = { id = "com.android.library", version.ref = "gradlePlugins-agp" }
 kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
-
+hilt = { id = "com.google.dagger.hilt.android" , version.ref = "hilt"}

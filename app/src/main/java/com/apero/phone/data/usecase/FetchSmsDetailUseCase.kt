@@ -1,7 +1,7 @@
 package com.apero.phone.data.usecase
 
-import com.simplemobiletools.commons.models.contacts.Contact
+import com.apero.commons.sms.models.Message
 
 interface FetchSmsDetailUseCase {
-    fun getSmsDetail()
+    suspend fun getSmsDetail(threadId: Long): List<Message>
 }

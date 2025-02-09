@@ -1,5 +1,8 @@
 package com.apero.phone.data.usecase
 
+import com.apero.commons.sms.models.Conversation
+import com.apero.commons.sms.models.Message
+
 interface FetchSmsListUseCase {
-    fun getSmsInbox()
+    suspend fun getSmsInbox(): List<Conversation>
 }

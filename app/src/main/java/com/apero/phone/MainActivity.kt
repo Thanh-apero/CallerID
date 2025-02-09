@@ -22,12 +22,11 @@ class MainActivity : AppCompatActivity() {
     companion object {
         private const val PERMISSIONS_REQUEST_READ_CONTACTS = 100
         private const val PERMISSIONS_REQUEST_READ_SMS = 104
-
     }
 
     private val getListContactUseCaseImpl by lazy { GetListContactUseCaseImpl(this) }
-    private val fetchSmsListUseCase by lazy { FetchSmsListUseCaseImpl() }
-    private val fetchSmsDetailUseCase by lazy { FetchSmsDetailUseCaseImpl() }
+    private val fetchSmsListUseCase by lazy { FetchSmsListUseCaseImpl(this) }
+    private val fetchSmsDetailUseCase by lazy { FetchSmsDetailUseCaseImpl(this) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
